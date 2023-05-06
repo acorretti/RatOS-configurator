@@ -9,7 +9,7 @@ fi
 
 source .env
 
-if [ -f "$RATOS_CONFIGURATION_PATH/../printer.cfg" ]; then
+if [ ! -f "$RATOS_CONFIGURATION_PATH/../printer.cfg" ]; then
   # first run, printer.cfg doesn't exist yet
   exit
 fi
